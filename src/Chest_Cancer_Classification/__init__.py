@@ -1,6 +1,6 @@
 import os, sys, logging
 
-logging_str = "[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s"
+logging_str = "[%(asctime)s]  %(levelname)s - %(message)s"
 
 log_dir = "logs"
 log_file_path = os.path.join(log_dir, "running_logs.log")
