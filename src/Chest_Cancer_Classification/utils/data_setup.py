@@ -38,20 +38,6 @@ class ChestXrayDataset(Dataset):
         return image, label
 
 def get_data_loaders(root_dir, batch_size=32):
-    """
-    Initialize the data loaders for the ChestXray dataset
-
-    Args:
-        root_dir (str): Path to the directory containing the train, test, and valid folders.
-        batch_size (int): Batch size for the data loaders.
-
-    Returns:
-        train_dataloader (DataLoader): Data loader for the training set.
-        test_dataloader (DataLoader): Data loader for the test set.
-        valid_dataloader (DataLoader): Data loader for the validation set.
-        class_names (list): List of class names.
-
-    """
     # Specify the weights to use from the DenseNet121 model
     weights = DenseNet121_Weights.DEFAULT
     # Get the transforms associated with the weights
